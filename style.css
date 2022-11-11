@@ -63,3 +63,6 @@
     font-size: 35px;
 }
 
+i:hover {
+    opacity: 1;
+}
