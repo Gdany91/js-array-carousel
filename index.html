@@ -1,0 +1,32 @@
+<!-- Dato un array contenente una lista di cinque immagini (che create voi in base alle img che vi passo),
+creare un carosello come nello screenshot allegato.MILESTONE 1
+Per prima cosa, creiamo il markup statico: costruiamo il container e inseriamo un’immagine grande al centro: avremo così la struttura base e gli stili pronti per poterci poi concentrare solamente sull’aspetto logico.MILESTONE 2
+Adesso rimuoviamo tutto il markup statico e inseriamo tutte le immagini dinamicamente servendoci dell’array fornito e un semplice ciclo for che concatena un template literal. Tutte le immagini saranno nascoste, tranne la prima, che avrà una classe specifica che la renderà visibile. Al termine di questa fase ci ritroveremo con lo stesso slider stilato nella milestone 1, ma costruito dinamicamente attraverso JavaScript.MILESTONE 3
+Al click dell’utente sulle frecce, il programma cambierà l’immagine attiva, che quindi verrà visualizzata al posto della precedente/successiva. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>carousel</title>
+</head>
+<body>
+
+    <div class="slider">
+        <div class="arrow"><i class="fa-solid fa-circle-arrow-up"></i></div>
+        <div class="reverse_arrow"><i class="fa-solid fa-circle-arrow-down"></i></div>
+        <div class="item active"><img class="size_img" src="img/01.webp" alt=""></div>
+        <div class="item hidden"><img class="size_img" src="img/02.webp" alt=""></div>
+        <div class="item hidden"><img class="size_img" src="img/03.webp" alt=""></div>
+        <div class="item hidden"><img class="size_img" src="img/04.webp" alt=""></div>
+        <div class="item hidden"><img class="size_img" src="img/05.webp" alt=""></div>
+    </div>
+
+
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
